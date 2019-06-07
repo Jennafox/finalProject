@@ -9,35 +9,26 @@ The toughest part was...
 
 ### Most interesting piece of your code and explanation for what it does.
 
-```Java
-void keyPressed() {
-if (keyCode == LEFT) {
-   tree= tree.getLeft();
-   System.out.println(tree.getValue());
-   String s=(String)tree.getValue();
-   fill(155);
-   textSize(50);
-} else if (keyCode == RIGHT) {
-   tree = tree.getRight();
-   System.out.println(tree.getValue());
-   String s=(String)tree.getValue();
-   fill(155);
-   textSize(50);
-} else if (tree.getLeft()==null&&tree.getRight()==null) {
-   System.out.println(tree.getValue());
-   tree=t.returnTree();
-}
-}
+
 ```
-This is the code that moves down the tree as decisions are made. It gets each value from both left and right and also casts the value to a String. If the progressions arrives at the leaf nodes, those values are printed.
-## Built With
+ public void show2() {
+    noStroke(); 
+    fill (255, 255, 255);
+    rect(x2, y2, 60, 100);
+    x2-=xspeed;
+    if (x2<-60) {
+      x2=width+30;
+      //xspeed=(int)(Math.random()*3)+1;
+      xspeed=4;
+      
+      The hardest part that we could figure out was getting the pillar to show and move, and we used this method to do that.
+      
+      ## Built With
 
 * [Processing](https://processing.org/) - The IDE used
 
 ## Authors
-
-* **Billie Thompson** 
-
+Jenna Fox, Mikayla Chunh
 ## Acknowledgments
 
 * Hat tip to anyone whose code was used
